@@ -1,16 +1,10 @@
-# Farfalle
+# Fintellection Chat
 
-Open-source AI-powered search engine. (Perplexity Clone)
-
-Run local LLMs (**llama3**, **gemma**, **mistral**, **phi3**), custom LLMs through **LiteLLM**, or use cloud models (**Groq/Llama3**, **OpenAI/gpt4-o**)
-
-https://github.com/rashadphz/farfalle/assets/20783686/9527a8c9-a13b-4e53-9cda-a3ab28d671b2
-
-Please feel free to contact me on [Twitter](https://twitter.com/rashadphz) or [create an issue](https://github.com/rashadphz/farfalle/issues/new) if you have any questions.
+This repository provides a full stack setup for the [Fintellection Engine](https://github.com/Fintellection/FintellectionEngine), which includes both the frontend and backend components necessary to run the engine. It utilizes technologies such as Next.js for the frontend and FastAPI for the backend, along with various search APIs and components for enhanced functionality.
 
 ## 💻 Live Demo
 
-[farfalle.dev](https://farfalle.dev/) (Cloud models only)
+[fintellection.com](https://fintellection.com/)
 
 ## 📖 Overview
 
@@ -18,28 +12,13 @@ Please feel free to contact me on [Twitter](https://twitter.com/rashadphz) or [c
 - 🏃🏿‍♂️ [Getting Started](#%EF%B8%8F-getting-started)
 - 🚀 [Deploy](#-deploy)
 
-## 🛣️ Roadmap
-
-- [x] Add support for local LLMs through Ollama
-- [x] Docker deployment setup
-- [x] Add support for [searxng](https://github.com/searxng/searxng). Eliminates the need for external dependencies.
-- [x] Create a pre-built Docker Image
-- [x] Add support for custom LLMs through LiteLLM
-- [x] Chat History
-- [x] Expert Search
-- [ ] Chat with local files
-
-
-
 ## 🛠️ Tech Stack
 
 - Frontend: [Next.js](https://nextjs.org/)
-- Backend: [FastAPI](https://fastapi.tiangolo.com/)
-- Search API: [SearXNG](https://github.com/searxng/searxng), [Tavily](https://tavily.com/), [Serper](https://serper.dev/), [Bing](https://www.microsoft.com/en-us/bing/apis/bing-web-search-api)
+- FintellectionEngine: [Fintellection Engine](https://github.com/Fintellection/FintellectionEngine)
 - Logging: [Logfire](https://pydantic.dev/logfire)
 - Rate Limiting: [Redis](https://redis.io/)
 - Components: [shadcn/ui](https://ui.shadcn.com/)
-
 
 ## Features
 - Search with multiple search providers (Tavily, Searxng, Serper, Bing)
@@ -67,7 +46,7 @@ Please feel free to contact me on [Twitter](https://twitter.com/rashadphz) or [c
 
 ### Quick Start:
 ```
-git clone https://github.com/rashadphz/farfalle.git
+git clone https://github.com/sunggyeol/FintellectionAI.git
 cd farfalle && cp .env-template .env
 ```
 Modify .env with your API keys (Optional, not required if using Ollama)
@@ -97,12 +76,3 @@ Use the copied backend URL in the `NEXT_PUBLIC_API_URL` environment variable whe
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frashadphz%2Ffarfalle&env=NEXT_PUBLIC_API_URL&envDescription=URL%20for%20your%20backend%20application.%20For%20backends%20deployed%20with%20Render%2C%20the%20URL%20will%20look%20like%20this%3A%20https%3A%2F%2F%5Bsome-hostname%5D.onrender.com&root-directory=src%2Ffrontend)
 
 And you're done! 🥳
-
-
-## Use Farfalle as a Search Engine
-
-To use Farfalle as your default search engine, follow these steps:
-1. Visit the settings of your browser
-2. Go to 'Search Engines'
-3. Create a new search engine entry using this URL: http://localhost:3000/?q=%s.
-4. Add the search engine.
