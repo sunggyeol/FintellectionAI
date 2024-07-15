@@ -134,7 +134,7 @@ async def recents(session: Session = Depends(get_session)) -> ChatHistoryRespons
     else:
         raise HTTPException(
             status_code=400,
-            detail="Chat history is not available when DB is disabled. Please try self-hosting the app by following the instructions here: https://github.com/rashadphz/farfalle",
+            detail="Chat history is not available when DB is disabled. Please try self-hosting the app by following the instructions here: https://github.com/sunggyeol/FintellectionAI",
         )
 
 
