@@ -2,17 +2,17 @@
 
 This repository provides a full stack setup for the [Fintellection Engine](https://github.com/Fintellection/FintellectionEngine), which includes both the frontend and backend components necessary to run the engine. It utilizes technologies such as Next.js for the frontend and FastAPI for the backend, along with various search APIs and components for enhanced functionality.
 
-## 💻 Live Demo
+## Live Demo
 
 [fintellection.com](https://fintellection.com/)
 
-## 📖 Overview
+## Overview
 
-- 🛠️ [Tech Stack](#%EF%B8%8F-tech-stack)
-- 🏃🏿‍♂️ [Getting Started](#%EF%B8%8F-getting-started)
-- 🚀 [Deploy](#-deploy)
+- [Tech Stack](#%EF%B8%8F-tech-stack)
+- [Getting Started](#%EF%B8%8F-getting-started)
+- [Deploy](#-deploy)
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Frontend: [Next.js](https://nextjs.org/)
 - FintellectionEngine: [Fintellection Engine](https://github.com/Fintellection/FintellectionEngine)
@@ -27,7 +27,7 @@ This repository provides a full stack setup for the [Fintellection Engine](https
 - Answer questions with any custom LLMs through [LiteLLM](https://litellm.vercel.app/docs/providers)
 - Search with an agent that plans and executes the search for better results
 
-## 🏃🏿‍♂️ Getting Started Locally
+## Getting Started Locally
 
 ### Prerequisites
 
@@ -60,7 +60,7 @@ Wait for the app to start then visit [http://localhost:3000](http://localhost:30
 
 For custom setup instructions, see [custom-setup-instructions.md](/custom-setup-instructions.md)
 
-## 🚀 Deploy
+## Deploy
 
 ### Backend
 
@@ -76,3 +76,9 @@ Use the copied backend URL in the `NEXT_PUBLIC_API_URL` environment variable whe
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frashadphz%2Ffarfalle&env=NEXT_PUBLIC_API_URL&envDescription=URL%20for%20your%20backend%20application.%20For%20backends%20deployed%20with%20Render%2C%20the%20URL%20will%20look%20like%20this%3A%20https%3A%2F%2F%5Bsome-hostname%5D.onrender.com&root-directory=src%2Ffrontend)
 
 And you're done! 🥳
+
+## Acknowledgements
+
+We would like to acknowledge the repository, [farfalle](https://github.com/rashadphz/farfalle), for providing the foundation and inspiration for this project. Without their hard work and dedication, this stack setup would not have been possible. We are grateful for their contributions to the open source community.
+
+If you find their work valuable, please consider giving them a star on GitHub to show your support.
