@@ -18,7 +18,7 @@ const NewChatButton = () => {
 };
 
 const TextLogo = () => {
-  return <div className="text-2xl font-medium">farfalle</div>;
+  return <div className="text-2xl font-medium">Fintellection</div>;
 };
 
 export function Navbar() {
@@ -35,7 +35,7 @@ export function Navbar() {
           <img
             src={theme === "light" ? "/logo-black.png" : "/logo-white.png"}
             alt="Logo"
-            className="w-12 h-12"
+            className="w-10 h-10"
           />
         </Link>
         {onHomePage ? <TextLogo /> : <NewChatButton />}

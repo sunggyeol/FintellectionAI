@@ -60,7 +60,7 @@ const ProToggle = () => {
             <span>Requires self-hosted setup. </span>
             <a
               className="text-primary hover:underline"
-              href="https://github.com/rashadphz/farfalle/"
+              href="https://github.com/sunggyeol/FintellectionAI/"
               target="_blank"
               rel="noreferrer"
             >

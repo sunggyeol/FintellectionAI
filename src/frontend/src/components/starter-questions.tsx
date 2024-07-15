@@ -1,11 +1,13 @@
 import { ArrowUpRight } from "lucide-react";
 
 const starterQuestions = [
-  "what is farfalle?",
-  "openai scarlett johansson?",
-  "what is groq?",
-  "what happened to ilya?",
+  "What's the latest news on cryptocurrency?",
+  "How is the S&P 500 performing today?",
+  "How do I start investing in real estate?",
+  "What happened to Donald Trump?",
 ];
+
+
 
 export const StarterQuestionsList = ({
   handleSend,

@@ -47,7 +47,7 @@ This repository provides a full stack setup for the [Fintellection Engine](https
 ### Quick Start:
 ```
 git clone https://github.com/sunggyeol/FintellectionAI.git
-cd farfalle && cp .env-template .env
+cd FintellectionAI && cp .env-template .env
 ```
 Modify .env with your API keys (Optional, not required if using Ollama)
 

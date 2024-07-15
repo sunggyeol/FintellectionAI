@@ -301,7 +301,7 @@ async def stream_pro_search_qa(
         if not PRO_MODE_ENABLED:
             raise HTTPException(
                 status_code=400,
-                detail="Pro mode is not enabled, self-host to enable it at https://github.com/rashadphz/farfalle",
+                detail="Pro mode is not enabled, self-host to enable it at https://github.com/sunggyeol/FintellectionAI",
             )
 
         model_name = get_model_string(request.model)
