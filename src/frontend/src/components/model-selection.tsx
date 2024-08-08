@@ -81,7 +81,7 @@ const ModelItem: React.FC<{ model: Model }> = ({ model }) => (
 
 export function ModelSelection() {
   const { localMode, model, setModel, toggleLocalMode } = useConfigStore();
-  const selectedModel = modelMap[model] ?? modelMap[ChatModel.GPT_3_5_TURBO];
+  const selectedModel = modelMap[model] ?? modelMap[ChatModel.GPT_4O_MINI];
 
   return (
     <Select
