@@ -12,9 +12,7 @@ export function isLocalModel(model: ChatModel) {
 
 export function isCloudModel(model: ChatModel) {
   return [
-    ChatModel.LLAMA_3_70B,
-    ChatModel.GPT_4O,
-    ChatModel.GPT_3_5_TURBO,
+    ChatModel.GPT_4O_MINI,
     ChatModel.LLAMA_3_1_405B,
   ].includes(model);
 }
