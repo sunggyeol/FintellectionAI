@@ -37,9 +37,9 @@ type Model = {
 };
 
 export const modelMap: Record<ChatModel, Model> = {
-  [ChatModel.GPT_3_5_TURBO]: {
+  [ChatModel.GPT_4O_MINI]: {
     name: "Fast",
-    description: "OpenAI/GPT-3.5-turbo",
+    description: "OpenAI/GPT-4o-mini",
     value: ChatModel.GPT_3_5_TURBO,
     smallIcon: <RabbitIcon className="w-4 h-4 text-cyan-500" />,
     icon: <RabbitIcon className="w-5 h-5 text-cyan-500" />,

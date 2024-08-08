@@ -10,7 +10,7 @@ class ChatModel(str, Enum):
     LLAMA_3_70B = "llama-3-70b"
     LLAMA_3_1_405B = "llama-3.1-405b"
     GPT_4o = "gpt-4o"
-    GPT_3_5_TURBO = "gpt-3.5-turbo"
+    GPT_4O_MINI = "gpt-4o-mini"
 
     # Local models
     LOCAL_LLAMA_3 = "llama3"
@@ -23,7 +23,7 @@ class ChatModel(str, Enum):
 
 
 model_mappings: dict[ChatModel, str] = {
-    ChatModel.GPT_3_5_TURBO: "gpt-3.5-turbo",
+    ChatModel.GPT_4O_MINI: "gpt-4o-mini",
     ChatModel.GPT_4o: "gpt-4o",
     ChatModel.LLAMA_3_70B: "groq/llama3-70b-8192",
     ChatModel.LOCAL_LLAMA_3: "ollama_chat/llama3",
