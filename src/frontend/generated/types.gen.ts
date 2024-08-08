@@ -66,6 +66,7 @@ export type ChatMessage = {
 
 export enum ChatModel {
   LLAMA_3_70B = "llama-3-70b",
+  LLAMA_3_1_405B = "llama-3.1-405b",
   GPT_4O = "gpt-4o",
   GPT_3_5_TURBO = "gpt-3.5-turbo",
   LLAMA3 = "llama3",

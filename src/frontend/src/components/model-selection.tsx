@@ -58,6 +58,13 @@ export const modelMap: Record<ChatModel, Model> = {
     smallIcon: <LightningBoltIcon className="w-4 h-4 text-yellow-500" />,
     icon: <LightningBoltIcon className="w-5 h-5 text-yellow-500" />,
   },
+  [ChatModel.LLAMA_3_1_405B]: {
+    name: "Hyper",
+    description: "HuggingFace/Llama3.1-405B",
+    value: ChatModel.LLAMA_3_70B,
+    smallIcon: <LightningBoltIcon className="w-4 h-4 text-yellow-500" />,
+    icon: <LightningBoltIcon className="w-5 h-5 text-yellow-500" />,
+  },
   [ChatModel.LLAMA3]: {
     name: "Llama3",
     description: "ollama/llama3",

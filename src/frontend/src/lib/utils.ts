@@ -15,5 +15,6 @@ export function isCloudModel(model: ChatModel) {
     ChatModel.LLAMA_3_70B,
     ChatModel.GPT_4O,
     ChatModel.GPT_3_5_TURBO,
+    ChatModel.LLAMA_3_1_405B,
   ].includes(model);
 }
