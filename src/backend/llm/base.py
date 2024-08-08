@@ -36,12 +36,16 @@ class EveryLLM(BaseLLM):
     ):
         os.environ.setdefault("OLLAMA_API_BASE", "http://localhost:11434")
 
+
         validation = validate_environment(model)
         if validation["missing_keys"]:
             raise ValueError(f"Missing keys: {validation['missing_keys']}")
 
         self.llm = LiteLLM(model=model)
-        self.client = instructor.from_litellm(completion)
+        try:
+            self.client = instructor.from_litellm(completion)
+        except Exception as e:
+            print(f"Error connecting to instructor: {e}")
 
     async def astream(self, prompt: str) -> CompletionResponseAsyncGen:
         return await self.llm.astream_complete(prompt)
