@@ -53,6 +53,7 @@ Modify .env with your API keys (Optional, not required if using Ollama)
 
 Start the app:
 ```
+docker-compose -f docker-compose.dev.yaml build
 docker-compose -f docker-compose.dev.yaml up -d
 ```
 
